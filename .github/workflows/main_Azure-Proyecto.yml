@@ -29,8 +29,6 @@ jobs:
       shell: pwsh
       run: |
         pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
-        npm install
-        node src/app.js
 
     - name: 'Run Azure Functions Action'
       uses: Azure/functions-action@v1
